@@ -273,7 +273,7 @@ function vundet() {
     gameOver = true;
     vinder = "bolle";
   } else if (f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 > 32) {
-    vinder = "Ingen";
+    vinder = "The Computer";
     gameOver = true;
   }
 }
