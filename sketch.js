@@ -273,7 +273,7 @@ else if (f1 + f5 + f9 === 15 || f7 + f5 + f3 === 15) {
   gameOver = true;
   vinder = "bolle";
 } else if (f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 > 32) {
-  vinder = "The Computer";
+  vinder = "Ingen";
   gameOver = true;
 }
 }
