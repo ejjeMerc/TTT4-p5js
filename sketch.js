@@ -35,7 +35,7 @@ function draw() {
     for (let i = 1; i < 4; i++) {
       line(i * fb, 0, i * fb, height);
       line(0, fh * i, width, fh * i);
-    }
+    };
 textAlign(CENTER,CENTER);
 textSize(16);
     fill(0,0,255);
