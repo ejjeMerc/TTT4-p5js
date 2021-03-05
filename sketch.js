@@ -36,7 +36,10 @@ function draw() {
       line(i * fb, 0, i * fb, height);
       line(0, fh * i, width, fh * i);
     }
-
+textAlign(CENTER,CENTER):
+textSize(16);
+    fill(0,0,255);
+    text("Ejnar",width/2,10);
     // Detect collision med felter
     noStroke();
     fill(255, 0, 0);
@@ -273,7 +276,7 @@ else if (f1 + f5 + f9 === 15 || f7 + f5 + f3 === 15) {
   gameOver = true;
   vinder = "bolle";
 } else if (f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 > 32) {
-  vinder = "Ingen";
+  vinder = "Ejnar";
   gameOver = true;
 }
 }
