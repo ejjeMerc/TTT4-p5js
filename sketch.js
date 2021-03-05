@@ -36,10 +36,10 @@ function draw() {
       line(i * fb, 0, i * fb, height);
       line(0, fh * i, width, fh * i);
     };
-textAlign(CENTER,CENTER);
-textSize(16);
-    fill(0,0,255);
-    text("Ejnar",width/2,10);
+    textAlign(CENTER, CENTER);
+    textSize(16);
+    fill(0, 0, 255);
+    text("Ejnar", width / 2, 10);
     // Detect collision med felter
     noStroke();
     fill(255, 0, 0);
@@ -231,52 +231,48 @@ function tegn() {
     line(10, 3 * fh - 10, fb - 10, 2 * fh + 10);
   }
   if (f7 === 5) {
-  ellipse(fb / 2, fh * 2.5, fb - 20, fh - 20);
-}
-if (f8 === 3) {
-  line(10 + fb, 10 + 2 * fh, 2 * fb - 10, 3 * fh - 10);
-  line(10 + fb, 3 * fh - 10, 2 * fb - 10, 2 * fh + 10);
-}
-if (f8 === 5) {
-  ellipse(fb / 2 + fb, fh * 2.5, fb - 20, fh - 20);
-}
-if (f9 === 3) {
-  line(10 + 2 * fb, 10 + 2 * fh, 3 * fb - 10, 3 * fh - 10);
-  line(10 + 2 * fb, 3 * fh - 10, 3 * fb - 10, 2 * fh + 10);
-}
-if (f9 === 5) {
-  ellipse(fb * 2.5, fh * 2.5, fb - 20, fh - 20);
-}
+    ellipse(fb / 2, fh * 2.5, fb - 20, fh - 20);
+  }
+  if (f8 === 3) {
+    line(10 + fb, 10 + 2 * fh, 2 * fb - 10, 3 * fh - 10);
+    line(10 + fb, 3 * fh - 10, 2 * fb - 10, 2 * fh + 10);
+  }
+  if (f8 === 5) {
+    ellipse(fb / 2 + fb, fh * 2.5, fb - 20, fh - 20);
+  }
+  if (f9 === 3) {
+    line(10 + 2 * fb, 10 + 2 * fh, 3 * fb - 10, 3 * fh - 10);
+    line(10 + 2 * fb, 3 * fh - 10, 3 * fb - 10, 2 * fh + 10);
+  }
+  if (f9 === 5) {
+    ellipse(fb * 2.5, fh * 2.5, fb - 20, fh - 20);
+  }
 }
 
 function vundet() {
-// undersøg om x har vundet
-if (f1 + f2 + f3 === 9 || f4 + f5 + f6 === 9 || f7 + f8 + f9 === 9) {
-  gameOver = true;
-  vinder = "kryds";
-}
-else if (f1 + f4 + f7 === 9 || f2 + f5 + f8 === 9 || f3 + f6 + f9 === 9) {
-gameOver = true;
-vinder = "kryds";
-}
-else if (f1 + f5 + f9 === 9 || f7 + f5 + f3 === 9) {
-gameOver = true;
-vinder = "kryds";
-}
-// undersøg om O har vundet
-else if (f1 + f2 + f3 === 15 || f4 + f5 + f6 === 15 || f7 + f8 + f9 === 15) {
-gameOver = true;
-vinder = "bolle";
-}
-else if (f1 + f4 + f7 === 15 || f2 + f5 + f8 === 15 || f3 + f6 + f9 === 15) {
-gameOver = true;
-vinder = "bolle";
-}
-else if (f1 + f5 + f9 === 15 || f7 + f5 + f3 === 15) {
-  gameOver = true;
-  vinder = "bolle";
-} else if (f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 > 32) {
-  vinder = "Ejnar";
-  gameOver = true;
-}
+  // undersøg om x har vundet
+  if (f1 + f2 + f3 === 9 || f4 + f5 + f6 === 9 || f7 + f8 + f9 === 9) {
+    gameOver = true;
+    vinder = "kryds";
+  } else if (f1 + f4 + f7 === 9 || f2 + f5 + f8 === 9 || f3 + f6 + f9 === 9) {
+    gameOver = true;
+    vinder = "kryds";
+  } else if (f1 + f5 + f9 === 9 || f7 + f5 + f3 === 9) {
+    gameOver = true;
+    vinder = "kryds";
+  }
+  // undersøg om O har vundet
+  else if (f1 + f2 + f3 === 15 || f4 + f5 + f6 === 15 || f7 + f8 + f9 === 15) {
+    gameOver = true;
+    vinder = "bolle";
+  } else if (f1 + f4 + f7 === 15 || f2 + f5 + f8 === 15 || f3 + f6 + f9 === 15) {
+    gameOver = true;
+    vinder = "bolle";
+  } else if (f1 + f5 + f9 === 15 || f7 + f5 + f3 === 15) {
+    gameOver = true;
+    vinder = "bolle";
+  } else if (f1 + f2 + f3 + f4 + f5 + f6 + f7 + f8 + f9 > 32) {
+    vinder = "Ejnar";
+    gameOver = true;
+  }
 }
