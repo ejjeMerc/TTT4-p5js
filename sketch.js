@@ -36,7 +36,7 @@ function draw() {
       line(i * fb, 0, i * fb, height);
       line(0, fh * i, width, fh * i);
     }
-textAlign(CENTER,CENTER):
+textAlign(CENTER,CENTER);
 textSize(16);
     fill(0,0,255);
     text("Ejnar",width/2,10);
