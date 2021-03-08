@@ -38,8 +38,9 @@ function draw() {
     };
     textAlign(CENTER, CENTER);
     textSize(16);
-    fill(0, 0, 255);
-    text("Ejnar", width / 2, 10);
+    fill(0, 0, 255)
+    strokeWeight(1);
+    text("Et eksempel", width / 2, 10);
     // Detect collision med felter
     noStroke();
     fill(255, 0, 0);
